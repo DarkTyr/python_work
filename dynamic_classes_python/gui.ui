@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>333</width>
+    <height>256</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Firmware Control GUI</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QPushButton" name="but_read_reg_0">
+      <property name="text">
+       <string>Read Reg0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="line_reg_0"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QPushButton" name="but_read_reg_1">
+      <property name="text">
+       <string>Read Reg1</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="line_reg_1"/>
+    </item>
+    <item row="2" column="0">
+     <widget class="QPushButton" name="but_read_reg_2">
+      <property name="text">
+       <string>Read Reg2</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="line_reg_2"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QPushButton" name="but_read_reg_3">
+      <property name="text">
+       <string>Read Reg3</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLineEdit" name="line_reg_3"/>
+    </item>
+    <item row="4" column="0">
+     <widget class="QPushButton" name="but_read_reg_4">
+      <property name="text">
+       <string>Read Reg4</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLineEdit" name="line_reg_4"/>
+    </item>
+    <item row="5" column="0">
+     <widget class="QPushButton" name="but_read_reg_5">
+      <property name="text">
+       <string>Read Reg5</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QLineEdit" name="line_reg_5"/>
+    </item>
+    <item row="6" column="0">
+     <widget class="QPushButton" name="but_exit">
+      <property name="text">
+       <string>Exit</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>333</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>but_exit</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>46</x>
+     <y>215</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>166</x>
+     <y>127</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
