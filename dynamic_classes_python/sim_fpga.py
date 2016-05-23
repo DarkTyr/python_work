@@ -14,11 +14,11 @@ class SIM_FPGA:
         self.reg8 = 0x00000
         self.reg9 = 0x00000
     '''This is needed to prevent python from creating a new class variable when you call setattr()'''
-    def __setattr__(self, attribute, value):
-        if attribute not in self.__dict__:
-            print "Cannot set %s" % attribute
-        else:
-            self.__dict__[attribute] = value
+    # def __setattr__(self, attribute, value):
+    #     if not attribute in self.__dict__:
+    #         print "Cannot set %s" % attribute
+    #     else:
+    #         self.__dict__[attribute] = value
 
     def write_int(self, reg, value):
         setattr(self, reg, value)

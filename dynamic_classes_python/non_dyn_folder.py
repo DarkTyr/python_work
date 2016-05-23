@@ -2,7 +2,8 @@
 #import sys
 #sys.path.insert(0, 'fic/')
 
-'''Ths works as well as long as there is an init file in the directory with a list of all of the files in the all def'''
+'''Ths works as well as long as there is an __init__ file in the directory with a list of all of the files in the
+all def'''
 from fic import *
 
 
