@@ -15,77 +15,115 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
-    <item row="5" column="2">
-     <widget class="QLineEdit" name="line_reg_5"/>
+    <item row="3" column="3">
+     <widget class="QLineEdit" name="line_reg_2_int"/>
     </item>
-    <item row="6" column="2">
+    <item row="1" column="3">
+     <widget class="QLineEdit" name="line_reg_0_int"/>
+    </item>
+    <item row="7" column="2">
      <widget class="QPushButton" name="but_read_registers">
       <property name="text">
        <string>Read Registers</string>
       </property>
      </widget>
     </item>
-    <item row="0" column="2">
-     <widget class="QLineEdit" name="line_reg_0"/>
+    <item row="2" column="3">
+     <widget class="QLineEdit" name="line_reg_1_int"/>
     </item>
-    <item row="1" column="0">
-     <widget class="QPushButton" name="but_read_reg_1">
-      <property name="text">
-       <string>reg1</string>
-      </property>
-     </widget>
+    <item row="4" column="3">
+     <widget class="QLineEdit" name="line_reg_3_int"/>
     </item>
-    <item row="0" column="0">
-     <widget class="QPushButton" name="but_read_reg_0">
-      <property name="text">
-       <string>reg0</string>
-      </property>
-     </widget>
+    <item row="6" column="2">
+     <widget class="QLineEdit" name="line_reg_5_hex"/>
     </item>
     <item row="1" column="2">
-     <widget class="QLineEdit" name="line_reg_1"/>
-    </item>
-    <item row="2" column="0">
-     <widget class="QPushButton" name="but_read_reg_2">
-      <property name="text">
-       <string>reg2</string>
-      </property>
-     </widget>
+     <widget class="QLineEdit" name="line_reg_0_hex"/>
     </item>
     <item row="2" column="2">
-     <widget class="QLineEdit" name="line_reg_2"/>
-    </item>
-    <item row="3" column="0">
-     <widget class="QPushButton" name="but_read_reg_3">
-      <property name="text">
-       <string>reg3</string>
-      </property>
-     </widget>
+     <widget class="QLineEdit" name="line_reg_1_hex"/>
     </item>
     <item row="3" column="2">
-     <widget class="QLineEdit" name="line_reg_3"/>
+     <widget class="QLineEdit" name="line_reg_2_hex"/>
     </item>
-    <item row="4" column="0">
-     <widget class="QPushButton" name="but_read_reg_4">
+    <item row="4" column="2">
+     <widget class="QLineEdit" name="line_reg_3_hex"/>
+    </item>
+    <item row="5" column="2">
+     <widget class="QLineEdit" name="line_reg_4_hex"/>
+    </item>
+    <item row="5" column="3">
+     <widget class="QLineEdit" name="line_reg_4_int"/>
+    </item>
+    <item row="6" column="3">
+     <widget class="QLineEdit" name="line_reg_5_int"/>
+    </item>
+    <item row="7" column="3">
+     <widget class="QPushButton" name="but_exit">
       <property name="text">
-       <string>reg4</string>
+       <string>Exit</string>
       </property>
      </widget>
     </item>
-    <item row="4" column="2">
-     <widget class="QLineEdit" name="line_reg_4"/>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>Reg2</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_1">
+      <property name="text">
+       <string>Reg0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>Reg1</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>Reg3</string>
+      </property>
+     </widget>
     </item>
     <item row="5" column="0">
-     <widget class="QPushButton" name="but_read_reg_5">
+     <widget class="QLabel" name="label_5">
       <property name="text">
-       <string>reg5</string>
+       <string>Reg4</string>
       </property>
      </widget>
     </item>
     <item row="6" column="0">
-     <widget class="QPushButton" name="but_exit">
+     <widget class="QLabel" name="label_6">
       <property name="text">
-       <string>Exit</string>
+       <string>Reg5</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QLabel" name="label_8">
+      <property name="text">
+       <string>Hex</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QLabel" name="label_7">
+      <property name="text">
+       <string>Value</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
       </property>
      </widget>
     </item>

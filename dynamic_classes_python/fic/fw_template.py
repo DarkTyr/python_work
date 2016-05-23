@@ -12,6 +12,9 @@ class FW_INTERFACE_CLASS:
             self.fpga = fpga
 
     def write_value(self, reg, value):
+	if reg == 'reg0':
+		value = value + 0xBEEF
+
         self.fpga.write_int(reg, value)
         return 0
 
