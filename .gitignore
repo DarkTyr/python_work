@@ -61,5 +61,6 @@ target/
 #Ipython Notebook
 .ipynb_checkpoints
 
+#IDE specific files and folders
 #PyCharm folders
 .idea/

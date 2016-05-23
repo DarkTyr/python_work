@@ -26,7 +26,14 @@ class MAINGUI(QtGui.QMainWindow):
         self.ui.but_read_reg_4.clicked.connect(self.read_reg_4)
         self.ui.but_read_reg_5.clicked.connect(self.read_reg_5)
 
+        self.ui.but_read_registers.clicked.connect(self.read_reg_all)
+
         self.ui.line_reg_0.returnPressed.connect(self.write_reg_0)
+        self.ui.line_reg_1.returnPressed.connect(self.write_reg_1)
+        self.ui.line_reg_2.returnPressed.connect(self.write_reg_2)
+        self.ui.line_reg_3.returnPressed.connect(self.write_reg_3)
+        self.ui.line_reg_4.returnPressed.connect(self.write_reg_4)
+        self.ui.line_reg_5.returnPressed.connect(self.write_reg_5)
 
     def read_reg_0(self):
         value = fw_module_ob.read_value('reg0')
@@ -75,6 +82,14 @@ class MAINGUI(QtGui.QMainWindow):
     def write_reg_5(self):
         value = int(str(self.ui.line_reg_5.text()), 16)
         fw_module_ob.write_value('reg5', value)
+
+    def read_reg_all(self):
+        self.read_reg_0()
+        self.read_reg_1()
+        self.read_reg_2()
+        self.read_reg_3()
+        self.read_reg_4()
+        self.read_reg_5()
 
 def main():
     app = QtGui.QApplication(sys.argv)
