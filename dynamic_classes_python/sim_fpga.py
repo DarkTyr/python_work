@@ -1,24 +1,30 @@
 import numpy as np
+import sys
 
+'''This is needed to prevent python from creating a new class variable when you call setattr()'''
+class FrozenClass(object):
+    __isfrozen = False
 
-class SIM_FPGA:
+    def __setattr__(self, key, value):
+        if self.__isfrozen and not hasattr(self, key):
+            raise TypeError( "%r is a frozen class" % self )
+        object.__setattr__(self, key, value)
+
+    def _freeze(self):
+        self.__isfrozen = True
+
+class SIM_FPGA(FrozenClass):
     def __init__(self):
-        self.reg0 = 0x00000
-        self.reg1 = 0x00000
-        self.reg2 = 0x00000
-        self.reg3 = 0x00000
-        self.reg4 = 0x00000
-        self.reg5 = 0x00000
-        self.reg6 = 0x00000
-        self.reg7 = 0x00000
-        self.reg8 = 0x00000
-        self.reg9 = 0x00000
-    '''This is needed to prevent python from creating a new class variable when you call setattr()'''
-    # def __setattr__(self, attribute, value):
-    #     if not attribute in self.__dict__:
-    #         print "Cannot set %s" % attribute
-    #     else:
-    #         self.__dict__[attribute] = value
+        self.list_reg = ['reg0',
+                         'reg1',
+                         'reg2',
+                         'reg3',
+                         'reg4',
+                         'reg5']
+        for x in self.list_reg:
+            setattr(self, x, 0x00000000)
+
+        self._freeze()
 
     def write_int(self, reg, value):
         setattr(self, reg, value)
