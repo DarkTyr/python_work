@@ -64,3 +64,5 @@ target/
 #IDE specific files and folders
 #PyCharm folders
 .idea/
+
+/.vscode/settings.json
