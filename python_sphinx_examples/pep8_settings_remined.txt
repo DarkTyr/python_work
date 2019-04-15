@@ -1,0 +1,9 @@
+    "restructuredtext.linter.extraArgs": [
+        "--ignore D002",
+        "--ignore D004"
+    ],
+	
+	
+	
+	put the above in the settings.json for vscode with pep8 enabled to suppress the ridiculous D002 and D004 errors of BS
+	
